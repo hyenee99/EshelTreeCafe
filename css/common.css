@@ -1,0 +1,56 @@
+body {
+  font-family: "Nanum Gothic Coding", monospace;
+  font-weight: 400;
+}
+
+.inner{
+  width: 1100px;
+  margin: 0 auto;
+  position:relative;
+}
+
+/* Header */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left:0;
+  background-color: #543900;
+  border-bottom: 3px solid #BD9424;
+}
+
+header > .inner {
+  height: 90px;
+}
+
+header img { /* 에셀트리 카페 로고 부분*/
+  width: 90px;
+  height: 90px;
+}
+
+header .main-menu {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+}
+
+header .item {
+  list-style-type: none; /* li 태그 앞에 점 없애기 */
+}
+
+header .main-menu .item .item_name {
+  padding: 50px 50px 20px 50px; /* 시계 방향 (상, 우, 하, 좌) */
+  color:#BD9424;
+  font-size: 13px;
+}
+
+header .main-menu .item:nth-child(3){ /*매장 글씨와 인스타 로고 간의 간격 조정*/
+  padding-right: 60px;
+}
+
+header .main-menu .item img{ /* 인스타그램 로고 부분 */
+  padding-top: 30px;  
+  width:50px;
+  height:50px;
+}
