@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+  <script defer src="./js/common.js"></script>
 </head>
 <body>
   <header>
@@ -18,15 +19,23 @@
   
       <ul class="main-menu">
         <li class="item">
-          <div class="item_name">에셀 스토리</div>
+          <a href="./eshelStory.html">
+            <div class="item_name">
+                에셀 스토리
+            </div>
+          </a>
         </li>
   
         <li class="item">
-          <div class="item_name">메뉴 소개</div>
+          <a href="./menu.html">
+            <div class="item_name">메뉴 소개</div>
+          </a>
         </li>
   
         <li class="item">
-          <div class="item_name">매장</div>
+          <a href="storeInfo.html">
+            <div class="item_name">매장 안내</div>
+          </a>
         </li>
 
         <li class="item">
@@ -37,5 +46,26 @@
       </ul>
     </div>
   </header>
+
+  <!-- 메인 화면에 사진 슬라이드 추가 -->
+  <span class="slideshow-container">
+    <div class="Slidesbackground">
+       <div class="mySlides fade">
+        <img src="./images/main_1.png" class="slideshow-image">
+       </div>
+
+       <div class="mySlides fade">
+          <img src="./images/main_2.jpg" class="slideshow-image">
+       </div>
+
+       <div class="mySlides fade">
+          <img src="./images/main_3.jpg" class="slideshow-image">
+       </div>
+
+       <div class="mySlides fade">
+        <img src="./images/main_4.jpg" class="slideshow-image">
+      </div>
+    </div>
+  </span>
 </body>
 </html>
