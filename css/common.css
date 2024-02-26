@@ -79,15 +79,15 @@ header .main-menu .item img{ /* 인스타그램 로고 부분 */
   overflow: hidden;
 }
 .mySlides {
-  width: 1130px;
-  height: 641px;
+  width: 100vw; /* vw, vh: 각각 컴퓨터 화면에 맞는 꽉 찬 사이즈로 자동으로 변경 */
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .slideshow-container {
-  left: -10px;
+  left: -8px;
   display: flex;
   justify-content: flex-start;
   position: relative;
