@@ -29,12 +29,12 @@ header {
 }
 
 header > .inner {
-  height: 90px;
+  height: 100px;
 }
 
 header img { /* 에셀트리 카페 로고 부분*/
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
 }
 
 header .main-menu {
@@ -49,7 +49,7 @@ header .item {
 }
 
 header .main-menu .item .item_name {
-  padding: 50px 50px 20px 50px; /* 시계 방향 (상, 우, 하, 좌) */
+  padding: 40px 50px 20px 50px; /* 시계 방향 (상, 우, 하, 좌) */
   color:#BD9424;
   font-size: 13px;
 }
@@ -64,7 +64,7 @@ header .main-menu .item:nth-child(3){ /*매장 글씨와 인스타 로고 간의
 }
 
 header .main-menu .item img{ /* 인스타그램 로고 부분 */
-  padding-top: 30px;  
+  padding-top: 23px;  
   width:50px;
   height:50px;
 }
