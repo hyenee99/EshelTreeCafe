@@ -156,8 +156,10 @@ header .main-menu .item img{ /* 인스타그램 로고 부분 */
 /* swiper 앞 뒤 버튼 부분 */
 .top_menu .swiper-button-prev,
 .top_menu .swiper-button-next {
-  width: 30px;
-  height: 30px;
+  width: 42px;
+  height: 42px;
+  border: 2px solid #543900;
+  border-radius: 50%;
   position: absolute;
   top:420px;
   z-index: 1;
@@ -165,24 +167,30 @@ header .main-menu .item img{ /* 인스타그램 로고 부분 */
 }
 .top_menu .swiper-button-prev{
   left: 60%;
-  margin-left: -415px;
+  margin-left: -885px;
   color:#543900;
 }
 .top_menu .swiper-button-next{
   right: 60%;
-  margin-right: -440px;
+  margin-right: -885px;
   color:#543900;
 }
 .top_menu .swiper-button-prev:hover,
 .top_menu .swiper-button-next:hover {
-  color: #FFE08C;
+  background-color: #FFE08C;
+  color: #BD9424;
+}
+.top_menu .swiper-button-next::after,
+.top_menu .swiper-button-prev::after {
+  display: none; /* 원래 있는 swiper 버튼 안보이게, 설정한 아이콘 모양으로 나오게 하기 위함 */
 }
 
 .top_menu .swiper-pagination { /* 순서 나오는 아래 동그라미 부분: pagination*/
-  bottom: 150px;
+  bottom: 170px;
   left: 0;
   right: 0;
 }
 .top_menu .swiper-pagination .swiper-pagination-bullet{ /* pagination의 각각의 동그라미 부분 */
-  background-color: #FFE08C;
+  background-color: #BD9424;
+  margin-right: 3px;
 }
