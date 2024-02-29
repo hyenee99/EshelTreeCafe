@@ -127,3 +127,62 @@ header .main-menu .item img{ /* 인스타그램 로고 부분 */
       opacity: 1
   }
 }
+
+.top_menu {
+  position: relative;
+}
+
+.top_menu .menu_title {  /* 에셀트리카페 인기메뉴 TOP 5 */
+  font-size: 40px;
+  font-family: "Nanum Pen Script", cursive;
+  color:#BD9424;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.top_menu .swiper-slide {
+  width: 650px;
+  height: 550px;
+  position: relative;
+}
+
+.top_menu .swiper-slide .top_menu_img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:-120px;
+}
+/* swiper 앞 뒤 버튼 부분 */
+.top_menu .swiper-button-prev,
+.top_menu .swiper-button-next {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top:420px;
+  z-index: 1;
+  cursor: pointer;
+}
+.top_menu .swiper-button-prev{
+  left: 60%;
+  margin-left: -415px;
+  color:#543900;
+}
+.top_menu .swiper-button-next{
+  right: 60%;
+  margin-right: -440px;
+  color:#543900;
+}
+.top_menu .swiper-button-prev:hover,
+.top_menu .swiper-button-next:hover {
+  color: #FFE08C;
+}
+
+.top_menu .swiper-pagination { /* 순서 나오는 아래 동그라미 부분: pagination*/
+  bottom: 150px;
+  left: 0;
+  right: 0;
+}
+.top_menu .swiper-pagination .swiper-pagination-bullet{ /* pagination의 각각의 동그라미 부분 */
+  background-color: #FFE08C;
+}
