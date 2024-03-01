@@ -200,25 +200,22 @@ header .main-menu .item img{ /* 인스타그램 로고 부분 */
 /* 상황별 메뉴 추천 부분 */
 .recommend_menu {
   margin-top: 40px;
-  border: 1px solid red;
   height: 530px;
 }
 .recommend_menu .condition {
-  border:2px solid yellow;
-  width: 1300px;
+  width: 1400px;
   height: 380px;
   display: flex;
   margin: 0 auto; /* 수평 중앙 정렬하기 */
 }
 .recommend_menu .symptom {
-  border: 1px solid blue;
   width: 300px;
 }
 .recommend_menu .symptom button{
   font-family: "Nanum Pen Script", cursive;
-  font-size: 30px;
+  font-size: 35px;
   color:#5D5D5D;
-  margin-left: 50px;
+  margin-left: 10px;
   margin-top: 40px;
   cursor: pointer;
   display: block;
@@ -235,7 +232,6 @@ header .main-menu .item img{ /* 인스타그램 로고 부분 */
 .recommend_menu .menu_image {
   width: 100%;
   display: flex;
-  border: 3px solid green;
 }
 .recommend_menu .menu_image img {
   width: 350px;
