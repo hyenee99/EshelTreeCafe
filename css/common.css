@@ -128,11 +128,13 @@ header .main-menu .item img{ /* 인스타그램 로고 부분 */
   }
 }
 
+/* 에셀트리카페 인기메뉴 Top5 부분 */
 .top_menu {
   position: relative;
+  height: 450px;
 }
 
-.top_menu .menu_title {  /* 에셀트리카페 인기메뉴 TOP 5 */
+.menu_title {  /* 메뉴 이름 부분 */
   font-size: 40px;
   font-family: "Nanum Pen Script", cursive;
   color:#BD9424;
@@ -186,11 +188,83 @@ header .main-menu .item img{ /* 인스타그램 로고 부분 */
 }
 
 .top_menu .swiper-pagination { /* 순서 나오는 아래 동그라미 부분: pagination*/
-  bottom: 170px;
+  bottom: 25px;
   left: 0;
   right: 0;
 }
 .top_menu .swiper-pagination .swiper-pagination-bullet{ /* pagination의 각각의 동그라미 부분 */
   background-color: #BD9424;
   margin-right: 3px;
+}
+
+/* 상황별 메뉴 추천 부분 */
+.recommend_menu {
+  margin-top: 40px;
+  border: 1px solid red;
+  height: 530px;
+}
+.recommend_menu .condition {
+  border:2px solid yellow;
+  width: 1300px;
+  height: 380px;
+  display: flex;
+  margin: 0 auto; /* 수평 중앙 정렬하기 */
+}
+.recommend_menu .symptom {
+  border: 1px solid blue;
+  width: 300px;
+}
+.recommend_menu .symptom button{
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 30px;
+  color:#5D5D5D;
+  margin-left: 50px;
+  margin-top: 40px;
+  cursor: pointer;
+  display: block;
+  background-color: transparent;
+  border: transparent;
+}
+.recommend_menu .symptom button:hover {
+  font-weight: bold;
+}
+.recommend_menu .symptom button:focus {
+  color:#353535;
+  background-color: #FFE08C;
+}
+.recommend_menu .menu_image {
+  width: 100%;
+  display: flex;
+  border: 3px solid green;
+}
+.recommend_menu .menu_image img {
+  width: 350px;
+  height: 350px;
+  margin-top: 10px;
+}
+.recommend_menu .menu_image img:hover {
+  transform: scale(1.2);
+  transition: .4s;
+}
+
+/* 메뉴 더보기 버튼 부분 */
+.recommend_menu .see_more {
+  width: 200px;
+  height: 50px;
+  margin: 0 auto; /* 수평 중앙 정렬하기 */
+}
+.recommend_menu .see_more_btn{
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  border-radius: 20px;
+  border:3px solid #543900;
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 25px;
+  color:#543900;
+  background-color:#FFE08C;
+  cursor: pointer;
+} 
+.recommend_menu .see_more_btn:hover {
+  background-color:#F2CB61;
 }
