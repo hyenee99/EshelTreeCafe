@@ -27,42 +27,34 @@ header {
   background-color: #543900;
   border-bottom: 3px solid #BD9424;
 }
-
 header > .inner {
   height: 100px;
 }
-
 header img { /* 에셀트리 카페 로고 부분*/
   width: 100px;
   height: 100px;
 }
-
 header .main-menu {
   position: absolute;
   bottom: 0;
   right: 0;
   display: flex;
 }
-
 header .item {
   list-style-type: none; /* li 태그 앞에 점 없애기 */
 }
-
 header .main-menu .item .item_name {
   padding: 40px 50px 20px 50px; /* 시계 방향 (상, 우, 하, 좌) */
   color:#BD9424;
   font-size: 13px;
 }
-
 header .main-menu .item .item_name:hover { 
   transform: scale(1.15);
   font-weight: bold;
 }
-
 header .main-menu .item:nth-child(3){ /*매장 글씨와 인스타 로고 간의 간격 조정*/
   padding-right: 60px;
 }
-
 header .main-menu .item img{ /* 인스타그램 로고 부분 */
   padding-top: 23px;  
   width:50px;
@@ -85,7 +77,6 @@ header .main-menu .item img{ /* 인스타그램 로고 부분 */
   justify-content: center;
   align-items: center;
 }
-
 .slideshow-container {
   left: -8px;
   display: flex;
@@ -128,12 +119,44 @@ header .main-menu .item img{ /* 인스타그램 로고 부분 */
   }
 }
 
+/* 에셀트리 카페 이야기 부분*/
+.eshelStory {
+  margin-left: -8px;
+  margin-right: -8px;
+  background-color: #FAF4C0;
+  border-bottom: 3px solid #FFE08C;
+}
+.eshelStory .tree_story { /* 나무 이미지 + 글씨 부분 */
+  height: 650px;
+  display: flex;
+}
+.eshelStory .tree .tree_img { /* 나무 이미지 */
+  height: 100%;
+}
+
+.eshelStory .tree_story .story { /* 글씨 부분 */
+  width: 100%;
+}
+.eshelStory .story p { /* 글씨 부분 p 태그*/
+  margin-left: 20px;
+  font-size: 25px;
+  color: #353535;
+  line-height: 30px;
+  font-family: "Nanum Pen Script", cursive;
+}
+.eshelStory .story .story_title { /* 에셀트리 카페 이야기 제목 부분*/
+  width: 400px;
+  font-size: 40px;
+  margin-top: 120px;
+  color:#543900;
+  background-color: #FFE08C;
+}
+
 /* 에셀트리카페 인기메뉴 Top5 부분 */
 .top_menu {
   position: relative;
   height: 450px;
 }
-
 .menu_title {  /* 메뉴 이름 부분 */
   font-size: 40px;
   font-family: "Nanum Pen Script", cursive;
@@ -142,13 +165,11 @@ header .main-menu .item img{ /* 인스타그램 로고 부분 */
   margin-top: 20px;
   margin-bottom: 0;
 }
-
 .top_menu .swiper-slide {
   width: 650px;
   height: 550px;
   position: relative;
 }
-
 .top_menu .swiper-slide .top_menu_img {
   width: 100%;
   height: 100%;
@@ -242,7 +263,6 @@ header .main-menu .item img{ /* 인스타그램 로고 부분 */
   transform: scale(1.2);
   transition: .4s;
 }
-
 /* 메뉴 더보기 버튼 부분 */
 .recommend_menu .see_more {
   width: 200px;
