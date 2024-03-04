@@ -67,3 +67,7 @@ beauty.addEventListener("click",()=> { //미용 버튼 눌렀을 때
   img_2.src="./images/jamong.png";
   img_3.src="./images/tangerine.png";
 });
+
+// 현재 년도 가져오기 
+const thisYear = document.querySelector('.this-year');
+thisYear.textContent=new Date().getFullYear();

@@ -284,3 +284,37 @@ header .main-menu .item img{ /* 인스타그램 로고 부분 */
 .recommend_menu .see_more_btn:hover {
   background-color:#F2CB61;
 }
+
+/* footer */
+footer .cafe {
+  background-color: #543900;
+  width: 100vw;
+  height: 200px;
+  margin-left: -8px;
+  margin-bottom: -20px;
+  color: #FAECC5;
+  font-size: 15px;
+}
+footer .name {
+  display: flex;
+}
+footer .name p {
+  margin: 0 auto;
+  margin-top:40px;
+  font-size: 20px;
+}
+footer .cafe .info {
+  margin-top: 30px;
+}
+footer .cafe .info span:nth-child(1){
+  margin-left: 400px;
+}
+footer .cafe .info span{
+  margin-left: 20px;
+}
+footer .cafe .copyright {
+  width: fit-content;
+  margin-top:50px;
+  margin-left: 600px;
+}
+
