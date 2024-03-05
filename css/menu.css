@@ -1,0 +1,63 @@
+header .main-menu .item .item_name {
+  margin-bottom: 20px;
+  color:#BD9424;
+  font-size: 13px;
+}
+header .main-menu .item img{ /* 인스타그램 로고 부분 */
+  width:50px;
+  height:50px;
+}
+
+/* 메뉴 페이지 */
+.menu_page .main_title{
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 150px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.menu_page .section_title {
+  width: 200px;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  color:#543900;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #FFE08C;
+}
+
+/* 음료 + others 공통 부분 */
+.menu_list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.menu_type{
+  width: 300px;
+  height: 300px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border: 2px solid #BD9424;
+  border-radius: 30px;
+  background-color: #fff;
+}
+.menu_type:hover {
+  transform: scale(1.15);
+  transition: .4s;
+}
+.menu_type img {
+  width: 100%;
+  height: 70%;
+  object-fit: contain;  /* 요소의 비율을 유지하면서 콘텐츠가 잘리지 않게 채움*/
+ }
+ .menu_type p {
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 10px;
+  font-weight: bold;
+ }
+ .menu_type .name_eng {
+  font-size: 13px;
+  color:#4C4C4C;
+ }
