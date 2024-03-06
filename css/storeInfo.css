@@ -1,0 +1,17 @@
+header .main-menu .item .item_name {
+  margin-bottom: 20px;
+  color:#BD9424;
+  font-size: 13px;
+}
+header .main-menu .item img{ /* 인스타그램 로고 부분 */
+  width:50px;
+  height:50px;
+}
+
+.info .main_title {
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 150px;
+  font-size: 40px;
+  font-weight: bold;
+}
