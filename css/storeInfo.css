@@ -8,10 +8,58 @@ header .main-menu .item img{ /* 인스타그램 로고 부분 */
   height:50px;
 }
 
+/* 매장 안내 부분 */
 .info .main_title {
   width: fit-content;
   margin: 0 auto;
   margin-top: 150px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.info .store{
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 30px;
+  display: flex;
+  height: 40vh;
+}
+.info .store:nth-of-type(2n-1){ /* 홀수 요소 */
+  border: 3px solid #F2CB61;
+  justify-content: flex-end; 
+}
+.info .store:nth-of-type(2n) { /* 짝수 요소 */
+  border: 3px solid #997000;
+  justify-content: flex-start;
+}
+.info .store img {
+  border-radius: 30px;
+  width: 55%;
+  object-fit:cover;
+}
+.info .store .description {
+  margin: 0 auto;
+}
+.info .store .description .title{
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  color:#543900;
+  background-color: #FFE08C;
+}
+
+/* 매장 위치 부분 */
+.location {
+  border: 1px solid red;
+  height: 500px;
+}
+.location .main_title {
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 70px;
   font-size: 40px;
   font-weight: bold;
 }
