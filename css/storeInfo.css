@@ -52,14 +52,16 @@ header .main-menu .item img{ /* 인스타그램 로고 부분 */
 }
 
 /* 매장 위치 부분 */
-.location {
-  border: 1px solid red;
-  height: 500px;
-}
 .location .main_title {
   width: fit-content;
   margin: 0 auto;
   margin-top: 70px;
+  margin-bottom: 40px;
   font-size: 40px;
   font-weight: bold;
+}
+.location .map {
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
 }
