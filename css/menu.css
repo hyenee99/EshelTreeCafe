@@ -61,3 +61,20 @@ header .main-menu .item img{ /* 인스타그램 로고 부분 */
   font-size: 13px;
   color:#4C4C4C;
  }
+
+ /* 장바구니 */
+ #basket {
+  border-radius: 30px;
+  width: 100%;
+  height: fit-content;
+  margin-top: 120px;
+  margin-left: 10px;
+  box-shadow: 10px 10px 30px black;
+ }
+ #basket p {
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 30px;
+  font-size: 25px;
+  font-weight: bold;
+ }

@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/menu.css">
-  <script defer src="./js/common.js"></script>
+  <script defer type="module" src="./js/menu.js"></script>
   <title>메뉴</title>
 </head>
 
@@ -54,166 +54,21 @@
     </div>
   </header>
 
-  <div class="menu_page">
-    <p class="main_title">EshelTree Menu</p>
-    <p style="width: fit-content; margin: 0 auto; margin-top: 30px;">수제차는 100% 손수 만든 수제청으로 제조됩니다.</p>
-
-    <div class="beverage">
-      <p class="section_title">Beverage</p>
-      <!-- 첫 번째 줄 메뉴 -->
-      <div class="menu_list">
-        <div class="menu_type">
-          <img src="images/beverage/1.png" />
-          <p>크림 카푸치노</p>
-          <p class="name_eng"> cream cappuccino </p>
-          <p> 4,000 원</p>
-        </div>
-
-        <div class="menu_type">
-          <img src="images/beverage/2.png" />
-          <p> 딸기 스무디</p>
-          <p class="name_eng"> Strawberry smoothie </p>
-          <p> 4,000 원</p>
-        </div>
-
-        <div class="menu_type">
-          <img src="images/beverage/3.png" />
-          <p>허브랑 딸기차</p>
-          <p class="name_eng"> Herb strawberry tea </p>
-          <p> 5,500 원</p>
-        </div>
-
-        <div class="menu_type">
-          <img src="images/beverage/4.png" />
-          <p> 냉대추차</p>
-          <p class="name_eng"> cold jujube tea </p>
-          <p> 6,500 원</p>
-        </div>
-
+  <div id="menuWithBasket">
+    <div class="menu_page">
+      <p class="main_title">EshelTree Menu</p>
+      <p style="width: fit-content; margin: 0 auto; margin-top: 30px;">수제차는 100% 손수 만든 수제청으로 제조됩니다.</p>
+  
+      <div class="beverage">
+        <p class="section_title">Beverage</p>
+        <!-- js로 음료 정보 추가 -->
       </div>
-      <!-- 두 번째 줄 메뉴  -->
-      <div class="menu_list">
-        <div class="menu_type">
-          <img src="images/beverage/5.png" />
-          <p>복숭아홍차</p>
-          <p class="name_eng"> Peach black tea </p>
-          <p> 5,000 원</p>
+  
+      <div class="others">
+        <p class="section_title">Others</p>
+        <div class="menu_list">
+           <!-- js로 디저트 정보 추가 -->
         </div>
-
-        <div class="menu_type">
-          <img src="images/beverage/6.png" />
-          <p> 청귤 딸기차 </p>
-          <p class="name_eng"> Green tangerine strawberry tea </p>
-          <p> 4,500 원</p>
-        </div>
-
-        <div class="menu_type">
-          <img src="images/beverage/7.png" />
-          <p>녹차라떼</p>
-          <p class="name_eng"> Green tea latte </p>
-          <p> 4,000 원</p>
-        </div>
-
-        <div class="menu_type">
-          <img src="images/beverage/대추차.png" />
-          <p> ⭐대추차 </p>
-          <p class="name_eng"> jujube tea </p>
-          <p> 4,000 원</p>
-        </div>
-      </div>
-      <!-- 세 번째 줄 메뉴  -->
-      <div class="menu_list">
-        <div class="menu_type">
-          <img src="images/beverage/레몬딸기차.png" />
-          <p>⭐레몬 딸기차</p>
-          <p class="name_eng"> lemon strawberry tea </p>
-          <p> 4,000 원</p>
-        </div>
-
-        <div class="menu_type">
-          <img src="images/beverage/레몬차.png" />
-          <p>레몬차</p>
-          <p class="name_eng"> lemon tea</p>
-          <p> 4,000 원</p>
-        </div>
-
-        <div class="menu_type">
-          <img src="images/beverage/매실차.png" />
-          <p>매실차</p>
-          <p class="name_eng"> plum tea </p>
-          <p> 4,000 원</p>
-        </div>
-
-        <div class="menu_type">
-          <img src="images/beverage/사과계피차.png" />
-          <p> ⭐사과계피차 </p>
-          <p class="name_eng"> apple cinnamon tea </p>
-          <p> 4,000 원</p>
-        </div>
-      </div>
-      <!-- 네 번째 줄 메뉴  -->
-      <div class="menu_list">
-        <div class="menu_type">
-          <img src="images/beverage/생강차.png" />
-          <p>⭐생강차</p>
-          <p class="name_eng"> ginger tea </p>
-          <p> 4,000 원</p>
-        </div>
-
-        <div class="menu_type">
-          <img src="images/beverage/유자차.png" />
-          <p>유자차</p>
-          <p class="name_eng"> Citron tea </p>
-          <p> 4,000 원</p>
-        </div>
-
-        <div class="menu_type">
-          <img src="images/beverage/자몽차.png" />
-          <p>자몽차</p>
-          <p class="name_eng"> Grapefruit tea </p>
-          <p> 4,000 원</p>
-        </div>
-
-        <div class="menu_type">
-          <img src="images/beverage/청귤차.png" />
-          <p>⭐청귤차 </p>
-          <p class="name_eng"> green tangerine tea </p>
-          <p> 4,000 원</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="others">
-      <p class="section_title">Others</p>
-      <div class="menu_list">
-        <div class="menu_type">
-          <img src="images/others/food_1.png" />
-          <p>크로크무슈</p>
-          <p class="name_eng"> Crokmouche </p>
-          <p> 4,000 원</p>
-        </div>
-
-        <div class="menu_type">
-          <img src="images/others/food_2.png" />
-          <p>호밀 치즈잼 토스트</p>
-          <p class="name_eng"> Rye cheese jam toast </p>
-          <p> 3,500 원</p>
-        </div>
-
-        <div class="menu_type">
-          <img src="images/others/food_3.png" />
-          <p>옛날빙수 1인</p>
-          <p class="name_eng"> Red Bean Shaved Ice </p>
-          <p> 7,000 원</p>
-        </div>
-
-        <div class="menu_type">
-          <img src="images/others/food_4.png" />
-          <p>다쿠아즈 3종</p>
-          <p class="name_eng"> Dacquoise </p>
-          <p> 각 2,500원</p>
-        </div>
-
       </div>
     </div>
   </div>
