@@ -71,10 +71,36 @@ header .main-menu .item img{ /* 인스타그램 로고 부분 */
   margin-left: 10px;
   box-shadow: 10px 10px 30px black;
  }
- #basket p {
+ #basket .title{
   width: fit-content;
   margin: 0 auto;
   margin-top: 30px;
+  margin-bottom: 30px;
   font-size: 25px;
   font-weight: bold;
+ }
+ #basket .addToCart {
+  margin-left: 20px;
+  margin-bottom: 15px;
+  font-size: 25px;
+  font-family: "Nanum Pen Script", cursive;
+ }
+ #basket .menu_price {
+  display: flex;
+ }
+ #basket .cartMenu {
+  width: 70%;
+ }
+ #basket .cartPrice {
+  color:#543900;
+ }
+ #basket .amount {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+ }
+ #basket .amount button {
+  background-color: #FFE08C;
+  border-radius: 30px;
+  border: transparent;
  }
