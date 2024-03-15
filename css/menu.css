@@ -103,4 +103,5 @@ header .main-menu .item img{ /* 인스타그램 로고 부분 */
   background-color: #FFE08C;
   border-radius: 30px;
   border: transparent;
+  cursor:pointer;
  }

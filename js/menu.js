@@ -46,7 +46,10 @@ const menuWithBasket = document.querySelector("#menuWithBasket");
 let isBasket = false; //장바구니가 있는지 없는지 
 let now_item;
 let basket;
+let cartNum=0; //카트 번호 (카트에 들어간 순서)
+
 const addedmenu = new Array(menu.length).fill(0); //추가된 메뉴를 확인하는 배열 
+let num = new Array(menu.length).fill(0); //해당 메뉴의 카트번호를 저장하는 배열
 
 for (let i = 0; i < menu.length; i++) {
   menu[i].addEventListener('click', function () {
@@ -62,45 +65,60 @@ for (let i = 0; i < menu.length; i++) {
       menuWithBasket.appendChild(basket);
 
       cart();
+      num[i]=cartNum; //해당 메뉴가 카트에 몇 번째로 들어갔는지 저장
       addedmenu[i]++;
     }
     else if (isBasket) {
-      if(addedmenu[i]<1)
+      if(addedmenu[i]<1){ // 장바구니는 이미 만들어진 상태인데, 클릭한 메뉴가 추가된 적이 없는 경우 
         cart();
-      addedmenu[i]++;
+        cartNum++;
+        num[i]=cartNum; //해당 메뉴가 카트에 몇 번째로 들어갔는지 저장 
+      }
+      else { //이전에 추가된 적이 있는 경우
+         amount(num[i]);
+      }
+      addedmenu[i]++; //해당 메뉴 추가 횟수 증가 
     }
-    console.log(i, addedmenu[i]);
   });
 }
+// 메뉴를 장바구니에 추가하는 함수 (메뉴 이름, 가격, 수량 화면 나오게)
 function cart() {
-    const addToCart = document.createElement("div");
-    addToCart.classList.add('addToCart');
+  const addToCart = document.createElement("div");
+  addToCart.classList.add('addToCart');
 
-    const menu_price = document.createElement("div");
-    menu_price.classList.add('menu_price');
+  const menu_price = document.createElement("div");
+  menu_price.classList.add('menu_price');
 
-    const amount = document.createElement("div");
-    amount.classList.add('amount');
+  const amount = document.createElement("div");
+  amount.classList.add('amount');
 
-    const nameParagraph = now_item.querySelector('.name');
-    const priceParagraph = now_item.querySelector('.price');
+  const nameParagraph = now_item.querySelector('.name');
+  const priceParagraph = now_item.querySelector('.price');
 
-    if (nameParagraph) {
-      menu_price.innerHTML = `
-        <li class="cartMenu">${nameParagraph.textContent}</li>
-        <p class="cartPrice">${priceParagraph.textContent}</p>
-        `;
-      amount.innerHTML = `
-        <button> ➖ </button>
-        <p class="cartAmount">아직못함</p>
-        <button> ➕ </button>
-        `;
-      basket.appendChild(addToCart);
-      addToCart.appendChild(menu_price);
-      addToCart.appendChild(amount);
-    } else {
-      console.log('클래스 "name"을 가진 <p> 태그가 존재하지 않습니다.');
-    }
+  if (nameParagraph) {
+    menu_price.innerHTML = `
+      <li class="cartMenu">${nameParagraph.textContent}</li>
+      <p class="cartPrice">${priceParagraph.textContent}</p>
+      `;
+    amount.innerHTML = `
+      <button class="minusButton"> ➖ </button>
+      <p class="cartAmount">1</p>
+      <button class="plusButton"> ➕ </button>
+      `;
+    
+    basket.appendChild(addToCart);
+    addToCart.appendChild(menu_price);
+    addToCart.appendChild(amount);
+  } else {
+    console.log('클래스 "name"을 가진 <p> 태그가 존재하지 않습니다.');
+  }
+}
+
+//카트번호를 매개변수로 받아서 수량을 변경하는 함수(메뉴에 해당하는 카트번호의 수량을 변경) => 메뉴를 클릭했을 때 변경
+function amount(number){
+  const currentAddToCart = document.querySelectorAll('.addToCart')[number]; // 현재 추가된 요소에 대한 참조
+  const currentAmountParagraph = currentAddToCart.querySelector('.amount p'); // 현재 추가된 요소 내의 수량 요소에 대한 참조
+  currentAmountParagraph.textContent++; // 수량 업데이트
 }
 
 // 현재 년도 가져오기 
