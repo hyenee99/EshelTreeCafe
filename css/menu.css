@@ -41,6 +41,7 @@ header .main-menu .item img{ /* 인스타그램 로고 부분 */
   border: 2px solid #BD9424;
   border-radius: 30px;
   background-color: #fff;
+  cursor: pointer;
 }
 .menu_type:hover {
   transform: scale(1.15);
